@@ -27,10 +27,10 @@ if ($("#gameList button").length) {
           let link = target.parent().find("button").attr("data-href");
           if (link) {
             console.log("link: " + link);
-            setTimeout(() => {
-              window.location.href = link;
-            }, Math.floor(Math.random() * 500) + 100); // Random delay between 100-600 milliseconds
-            // window.location.href = link;
+            // setTimeout(() => {
+            //   window.location.href = link;
+            // }, Math.floor(Math.random() * 500) + 100); // Random delay between 100-600 milliseconds
+            window.location.href = link;
           } else {
             console.log("not found link!");
             setTimeout(() => {
